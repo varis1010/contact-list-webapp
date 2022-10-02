@@ -242,7 +242,7 @@ export default function CustomModel({ getUserFormData, isEdit, currentContactDat
               type="submit"
               variant="contained"
               disabled={formState.isSubmitting}
-              className={classes.buttonContainer}
+              className={classes.buttonSaveContainer}
             >
               <Box
                 component="span"
