@@ -4,7 +4,7 @@ export const styles = (theme) => ({
   root: {
     display: 'flex',
     width: "500px",
-    minHeight: "68vh",
+    minHeight: "500px",
     justifyContent: "center",
     marginLeft: '15px',
     marginTop: '75px',

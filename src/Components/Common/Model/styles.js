@@ -11,7 +11,7 @@ export const styles = (theme) => ({
     marginLeft: theme.spacing(1),
     marginRight: theme.spacing(1),
     width: '25ch',
-    '& .MuiInput-input': {
+    '& .MuiOutlinedInput-input': {
       '&::-webkit-outer-spin-button, &::-webkit-inner-spin-button': {
         '-webkit-appearance': 'none',
       },

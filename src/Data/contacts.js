@@ -25,7 +25,7 @@ export const contacts = [
     "lastName": "kumar",
     "email": "akshay@gmail.com",
     "phone": "90909090",
-    "company": "Cygnet Infotech Pvt. Ltd.",
+    "company": "FamCode Managment Pvt ltd.",
     "designation": "design enginner",
     "address": "2nd Floor The Textile Association (India, Ashram Rd, Ahmedabad, 380009"
   },
