@@ -7,9 +7,9 @@ export const styles = (theme) => ({
   appBarSpacer: theme.mixins.toolbar,
   page: {
     flexGrow: 1,
-    height: "100vh",
-    overflow: "auto",
-    background: "#f0f0f0",
+    minHeight: "100vh",
+    // overflow: "auto",
+    background: "#fff",
   },
   contentContainer: {
     maxWidth: '100%',

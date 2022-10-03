@@ -1,7 +1,7 @@
 export const styles = (theme) => ({
   root: {
     flexGrow: 1,
-    margin: 0
+    margin: 0,
   },
   paper: {
     minHeight: "90vh",

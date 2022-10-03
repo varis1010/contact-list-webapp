@@ -126,6 +126,7 @@ export default function CustomModel({ getUserFormData, isEdit, currentContactDat
                 shrink: true,
               }}
               align="left"
+              autoFocus
               error={Boolean(errors?.firstName)}
               helperText={errors?.firstName?.message}
             />

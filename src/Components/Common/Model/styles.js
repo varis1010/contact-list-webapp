@@ -1,9 +1,23 @@
 export const styles = (theme) => ({
+  root: {
+    [theme.breakpoints.down('sm')]: {
+      width: "100%",
+      height: 600
+    },
+  },
   buttonContainer: {
     color: "#fff",
     width: "130px",
     padding: "8px",
     background: 'linear-gradient(90deg, rgba(255,215,150,1) 0%, rgba(232,78,110,1) 50%, rgba(230,34,138,1) 100%)',
+    [theme.breakpoints.down('md')]: {
+      width: "120px",
+      padding: "6px",
+    },
+    [theme.breakpoints.down('md')]: {
+      width: "110px",
+      padding: "6px",
+    },
   },
   buttonCancelContainer: {
     color: "#fff",

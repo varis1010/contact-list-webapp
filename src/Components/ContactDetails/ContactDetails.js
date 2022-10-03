@@ -34,6 +34,7 @@ export default function ContactDetails({ selectedRecord }) {
             <Typography
               variant="h5"
               color="textPrimary"
+              className={classes.titleName}
               style={{ textTransform: "capitalize" }}>
               {`${selectedRecord[0]?.firstName} ${selectedRecord[0]?.lastName}`}
             </Typography>
@@ -57,7 +58,7 @@ export default function ContactDetails({ selectedRecord }) {
                 <TableBody>
                   <TableRow>
                     <TableCell className={classes.tableCellKey}>
-                      <Typography variant="subtitle1" color="textSecondary">
+                      <Typography className={classes.tableTextKey} variant="subtitle1" color="textSecondary">
                         Full Name:
                       </Typography>
                     </TableCell>
@@ -65,9 +66,7 @@ export default function ContactDetails({ selectedRecord }) {
                       <Box
                         style={{ textTransform: "capitalize" }}
                         component="span"
-                        fontFamily="'Trebuchet MS', sans-serif"
-                        fontSize="15px"
-                        fontWeight='bold'
+                        className={classes.tableCellBoxValue}
                       >
                         {`${selectedRecord[0]?.firstName} ${selectedRecord[0]?.lastName}`}
                       </Box>
@@ -75,16 +74,14 @@ export default function ContactDetails({ selectedRecord }) {
                   </TableRow>
                   <TableRow >
                     <TableCell className={classes.tableCellKey}>
-                      <Typography variant="subtitle1" color="textSecondary">
+                      <Typography className={classes.tableTextKey} variant="subtitle1" color="textSecondary">
                         Email:
                       </Typography>
                     </TableCell>
                     <TableCell className={classes.tableCellValue}>
                       <Box
                         component="span"
-                        fontFamily="'Trebuchet MS', sans-serif"
-                        fontSize="15px"
-                        fontWeight='bold'
+                        className={classes.tableCellBoxValue}
                       >
                         {selectedRecord[0]?.email}
                       </Box>
@@ -92,16 +89,14 @@ export default function ContactDetails({ selectedRecord }) {
                   </TableRow>
                   <TableRow >
                     <TableCell className={classes.tableCellKey}>
-                      <Typography variant="subtitle1" color="textSecondary">
+                      <Typography className={classes.tableTextKey} variant="subtitle1" color="textSecondary">
                         Phone:
                       </Typography>
                     </TableCell>
                     <TableCell className={classes.tableCellValue}>
                       <Box
                         component="span"
-                        fontFamily="'Trebuchet MS', sans-serif"
-                        fontSize="15px"
-                        fontWeight='bold'
+                        className={classes.tableCellBoxValue}
                       >
                         {selectedRecord[0]?.phone}
                       </Box>
@@ -109,16 +104,14 @@ export default function ContactDetails({ selectedRecord }) {
                   </TableRow>
                   <TableRow >
                     <TableCell className={classes.tableCellKey}>
-                      <Typography variant="subtitle1" color="textSecondary">
+                      <Typography className={classes.tableTextKey} variant="subtitle1" color="textSecondary">
                         Company:
                       </Typography>
                     </TableCell>
                     <TableCell className={classes.tableCellValue}>
                       <Box
                         component="span"
-                        fontFamily="'Trebuchet MS', sans-serif"
-                        fontSize="15px"
-                        fontWeight='bold'
+                        className={classes.tableCellBoxValue}
                       >
                         {selectedRecord[0]?.company
                           ? selectedRecord[0]?.company
@@ -128,16 +121,14 @@ export default function ContactDetails({ selectedRecord }) {
                   </TableRow>
                   <TableRow >
                     <TableCell className={classes.tableCellKey}>
-                      <Typography variant="subtitle1" color="textSecondary">
+                      <Typography className={classes.tableTextKey} variant="subtitle1" color="textSecondary">
                         Address:
                       </Typography>
                     </TableCell>
                     <TableCell className={classes.tableCellValue}>
                       <Box
                         component="span"
-                        fontFamily="'Trebuchet MS', sans-serif"
-                        fontSize="15px"
-                        fontWeight='bold'
+                        className={classes.tableCellBoxValue}
                       >
                         {selectedRecord[0]?.address}
                       </Box>

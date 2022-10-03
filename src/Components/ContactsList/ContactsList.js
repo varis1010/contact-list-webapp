@@ -10,7 +10,7 @@ import Checkbox from '@material-ui/core/Checkbox';
 import BasicInfo from '../Common/BasicInfo/BasicInfo';
 import DeleteIcon from '@material-ui/icons/Delete';
 import EditIcon from '@material-ui/icons/Edit';
-import { Box } from '@material-ui/core';
+import { Box, Typography } from '@material-ui/core';
 
 import EmptyPage from '../Common/EmptyPage/EmptyPage';
 
@@ -40,7 +40,7 @@ export default function ContactsList({ contactList, setSelectedRecord, handleDel
   return (
     <TableContainer className={classes.contactListTableContainer}>
       <Table className={classes.table} aria-label="simple table">
-        <TableHead>
+        <TableHead className={classes.contactListTableHead}>
           <TableRow className={classes.contactListTableRow}>
             <TableCell className={classes.contactListTableCell}>
               <Box
@@ -110,7 +110,7 @@ export default function ContactsList({ contactList, setSelectedRecord, handleDel
                   <BasicInfo contacts={row} />
                 </TableCell>
                 <TableCell className={classes.contactListTableCell}>
-                  {row.company}
+                  <Typography className={classes.companyText} listItemTexttype="body2">{row.company}</Typography>
                 </TableCell>
                 <TableCell className={classes.contactListTableCell}>
                   <Box className={classes.actionButtonContainer}>
@@ -125,6 +125,6 @@ export default function ContactsList({ contactList, setSelectedRecord, handleDel
           )}
         </TableBody>
       </Table>
-    </TableContainer>
+    </TableContainer >
   );
 }

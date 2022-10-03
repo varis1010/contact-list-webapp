@@ -13,6 +13,12 @@ export const styles = (theme) => ({
     [theme.breakpoints.up('sm')]: {
       marginLeft: theme.spacing(1),
     },
+    [theme.breakpoints.down('md')]: {
+      width: '200px',
+    },
+    [theme.breakpoints.down('sm')]: {
+      width: '180px',
+    },
   },
   searchIcon: {
     padding: theme.spacing(0, 2),

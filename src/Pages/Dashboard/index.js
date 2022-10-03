@@ -1,5 +1,5 @@
 import React from "react";
-import { makeStyles, Grid, Paper, Typography, Box } from "@material-ui/core";
+import { makeStyles, Grid, Typography, Box } from "@material-ui/core";
 
 import Contacts from "../Contacts/Contacts";
 
@@ -12,7 +12,7 @@ export default function Dashboard() {
   const classes = useStyles();
   return (
     <Grid className={classes.root} item xs={12}>
-      <Paper className={classes.paper} xs={12}>
+      <Box className={classes.paper} xs={12}>
         <Box className={classes.contactsCaptionContainer}>
           <img className={classes.contactLogo} src="contacts_logo.png" alt="contact_logo" />
           <Typography variant="h6" className={classes.contactsLogoText} gutterBottom>
@@ -25,7 +25,7 @@ export default function Dashboard() {
         <Box >
           <Contacts />
         </Box>
-      </Paper>
+      </Box>
     </Grid>
   );
 }
